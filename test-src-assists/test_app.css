@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+}
+
+select {
+  width: 180px;
+}
+
+.explain {
+  font-size: 1.2rem;
+  text-indent: 2em;
+}
+
+.title {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.dropdown-label {
+  padding: 10px;
+}
+

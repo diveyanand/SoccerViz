@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Assist Heatmap Test</title>
+  <meta name="description" content="assists">
+  <meta name="author" content="Team 11">
+  <link rel="stylesheet" href="test_app.css">
+</head>
+
+<body>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <div id='header'>
+    <h1 class='title'>Assist Heatmap Test</h1>
+  </div>
+
+  <div id="assists-component" class='flex-container'>
+      <div id="assists-explain" style='width:459px;margin-top:5%;'>
+        <h2 class='center'>
+          Assist Heatmap
+        </h2>
+        <p class='explain'>
+          &emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div id="assists-viz">
+        <div id="dropdowns" class="flex-container">
+          <h2 class="dropdown-label"> Team <br>
+            <select id="assists-team-sel"></select>
+          </h2>
+          <h2 class="dropdown-label"> Season <br>
+            <select id="assists-season-sel"></select>
+          </h2>
+        </div>
+      
+      <div id='eventHandler' class='center'>    
+        <svg width="459" height="310" id='field-aggregate'>
+          <image href="../src/assets/pitch.svg" opacity='0.4'>
+          <!-- <rect width="459" height="310" style="fill:none;stroke:rgb(0,0,0)"/> -->
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <script src="test_app.js"></script>
+
+</body>
+</html>

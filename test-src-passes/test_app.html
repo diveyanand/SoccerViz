@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Aggregated Passes Test</title>
+  <meta name="description" content="Passes">
+  <meta name="author" content="Team 11">
+  <link rel="stylesheet" href="test_app.css">
+  <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+</head>
+
+<body>
+  <div id='header'>
+    <h1 class='title'> Passes Test </h1>
+  </div>
+
+  <div id="passes-component" class='flex-container'>
+    <div id="passes-explain" style='width:459px;margin-top:5%;'>
+      <h2 class='center'>
+        Aggregated Passes
+      </h2>
+      <p class='explain'>
+        &emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+
+    <div id="passes-viz">
+      <div id="dropdowns" class="flex-container">
+        <h2 class="dropdown-label"> Team <br>
+          <select id="passes-team-sel"></select>
+        </h2>
+        <h2 class="dropdown-label"> Season <br>
+          <select id="passes-season-sel"></select>
+        </h2>
+      </div>
+      <p id='aggregate-number' class='agg-label'></p>
+    
+      <div id='eventHandler' class='center'>    
+        <svg width="459" height="310" id='field-aggregate'>
+          <image href="../src/assets/pitch.svg" opacity='0.4'>
+        </svg>
+
+        <div id='length-slider' style='margin-left: 30px; margin-right: 35px;'></div>
+        <div class='flex-container' style="justify-content: space-between; margin-left: 30px; margin-right: 35px;">
+          <p>Short</p>
+          <p style='text-align: center;'>Pass Length Filter</p>
+          <p>Long</p>
+        </div>
+      </div>
+    </div>
+
+    <div id='passes-slider' style='margin-top: 109px;'>
+      <div id='complete-slider'></div>
+    </div>
+    <p style="margin-top: 109px; margin-bottom: 90px; text-align: center; writing-mode: vertical-lr;">Pass Completion Filter</p>
+  </div>
+
+  <script src="test_app.js"></script>
+
+</body>
+</html>
